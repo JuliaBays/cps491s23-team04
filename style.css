@@ -41,7 +41,7 @@ p {
 .section-title {
     font-size: 4rem;
     font-weight: 300;
-    color: black;
+    color: white; /*title of projects page*/
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -49,7 +49,7 @@ p {
 }
 
 .section-title span {
-    color: crimson;
+    color: rgb(87, 132, 179); /*contact info*/
 }
 
 .cta {
@@ -57,7 +57,7 @@ p {
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid crimson;
+    border: 2px solid white; /*box around projects on home*/
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -68,17 +68,17 @@ p {
 
 .cta:hover {
     color: white;
-    background-color: crimson;
+    background-color: rgb(21, 75, 113); /*project box on homepage fill color when hovering*/
 }
 
 .brand h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    color: white;
+    color: crimson; /*can't find*/
 }
 
 .brand h1 span {
-    color: crimson;
+    color: white; /*Julia and Gabby in header*/
 }
 
 
@@ -95,7 +95,7 @@ p {
 
 #header .header {
     min-height: 8vh;
-    background-color: rgba(31, 30, 30, 0.24);
+    background-color: rgba(91, 139, 188, 0.533); /*color of header rectangle*/
     transition: 0.3s ease background-color;
 }
 
@@ -112,7 +112,7 @@ p {
 #header .nav-list ul {
     list-style: none;
     position: absolute;
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(115, 149, 182); /*can't find*/
     width: 100vw;
     height: 100vh;
     left: 100%;
@@ -160,7 +160,7 @@ p {
 }
 
 #header .nav-list ul li:hover a {
-    color: crimson;
+    color: rgb(11, 2, 136); /*nav-bar hover over home, projects, contact*/
 }
 
 #header .hamburger {
@@ -246,7 +246,7 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: rgb(87, 132, 179); /*background of home page*/
     opacity: 0.7;
     z-index: -1;
 }
@@ -287,7 +287,7 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: crimson;
+    background-color: crimson; /*can't find*/
     animation: text_reveal_box 1s ease;
     animation-delay: 0.5s;
 }
@@ -354,7 +354,7 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(60deg, #8d267c 0%, #209b80 100%); /*can't find*/
     opacity: 0.9;
     z-index: -1;
 }
@@ -385,13 +385,14 @@ p {
 
 #projects .projects {
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1200px;/*saw no change when I changed it*/
     margin: 0 auto;
     padding: 100px 0;
 }
 
 #projects .projects-header h1 {
     margin-bottom: 50px;
+    color: rgb(3, 49, 117);
 }
 
 #projects .all-projects {
@@ -401,12 +402,23 @@ p {
     flex-direction: column;
 }
 
+#projects .project-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; /*saw no change*/
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 #projects .project-item {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 80%; /*saw no change*/
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -414,19 +426,22 @@ p {
 
 #projects .project-info {
     padding: 30px;
-    flex-basis: 50%;
+    flex-basis: 100%; /*width of project boxes, was 60********************/
     height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    color: white;
+    background-image: linear-gradient(60deg, rgba(229, 229, 229, 0.533) 0%, rgba(226, 226, 226, 0.533) 100%); /*gradient within project boxes, 
+    right is top right corner, left is bottom left corner
+    I like this combo: (60deg, rgb(180, 205, 233) 0%, rgb(176, 204, 234) 100%) light blues*/
+    color: rgb(78, 107, 151);
 }
 
 #projects .project-info h1 {
     font-size: 4rem;
     font-weight: 500;
+    margin-left: 70px;
 }
 
 #projects .project-info h2 {
@@ -435,12 +450,18 @@ p {
     margin-top: 10px;
 }
 
+#projects .project-info h3 { /*main header*/
+    font-size: 4rem;
+    font-weight: 500;
+    margin-left: 98px;
+}
+
 #projects .project-info p {
-    color: white;
+    color: rgb(3, 49, 117);
 }
 
 #projects .project-img {
-    flex-basis: 50%;
+    flex-basis: 100%; /*was 80***********/
     height: 300px;
     overflow: hidden;
     position: relative;
@@ -453,7 +474,8 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(60deg, #b3c7de 0%, #acc3db 100%);
+    /*  91, 139, 188, 0.533  */
     opacity: 0.7;
 }
 
@@ -474,9 +496,10 @@ p {
 #about .about {
     flex-direction: column-reverse;
     text-align: center;
-    max-width: 1200px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 100px 20px;
+    margin-left: 250px;
 }
 
 #about .col-left {
@@ -497,6 +520,7 @@ p {
 
 #about .col-right p {
     margin-bottom: 20px;
+    color: black;
 }
 
 #about .col-right .cta {
@@ -696,6 +720,7 @@ p {
         margin: 2.5%;
     }
     /* End Services Section */
+
     /* Project */
     #projects .project-item {
         flex-direction: row;
@@ -716,30 +741,58 @@ p {
         height: 100%;
     }
     /* End Project */
+
+    
     /* About */
+    /*
     #about .about {
-        flex-direction: row;
+        flex-direction: column-reverse;
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 20px;
     }
     #about .col-left {
-        width: 600px;
-        height: 400px;
-        padding-left: 60px;
-    }
-    #about .about .col-left .about-img::after {
-        left: -45px;
-        top: 34px;
-        height: 98%;
-        width: 98%;
-        border: 10px solid crimson;
+        width: 250px;
+        height: 360px;
     }
     #about .col-right {
-        text-align: left;
-        padding: 30px;
+        width: 100%;
     }
-    #about .col-right h1 {
-        text-align: left;
+    #about .col-right h2 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        margin-bottom: 10px;
     }
+    #about .col-right p {
+        margin-bottom: 20px;
+    }
+    #about .col-right .cta {
+        color: black;
+        margin-bottom: 50px;
+        padding: 10px 20px;
+        font-size: 2rem;
+    }
+    #about .col-left .about-img {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border: 10px solid white;
+    }
+    #about .col-left .about-img::after {
+        content: '';
+        position: absolute;
+        left: -33px;
+        top: 19px;
+        height: 98%;
+        width: 98%;
+        border: 7px solid crimson;
+        z-index: -1;
+    }*/
     /* End About */
+
+    
     /* contact  */
     #contact .contact {
         flex-direction: column;
