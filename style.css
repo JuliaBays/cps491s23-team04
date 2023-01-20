@@ -41,7 +41,8 @@ p {
 .section-title {
     font-size: 4rem;
     font-weight: 300;
-    color: white; /*title of projects page*/
+    color: white;
+    /*title of projects page*/
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -49,15 +50,20 @@ p {
 }
 
 .section-title span {
-    color: rgb(87, 132, 179); /*contact info*/
+    color: rgb(87, 132, 179);
+    /*contact info*/
 }
+
+
+/* for the white buttons on home screen*/
 
 .cta {
     display: inline-block;
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid white; /*box around projects on home*/
+    border: 2px solid white;
+    /*box around projects on home*/
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -68,17 +74,45 @@ p {
 
 .cta:hover {
     color: white;
-    background-color: rgb(21, 75, 113); /*project box on homepage fill color when hovering*/
+    background-color: rgb(21, 75, 113);
+    /*project box on homepage fill color when hovering*/
+}
+
+
+/* button for the messenger app on projects */
+
+.cta2 {
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgb(21, 75, 113);
+    background-color: transparent;
+    border: 2px solid rgb(21, 75, 113);
+    /*box around projects on home*/
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+    margin-left: 163px;
+}
+
+.cta2:hover {
+    color: rgb(21, 75, 113);
+    background-color: white
+    /*project box on homepage fill color when hovering*/
 }
 
 .brand h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    color: crimson; /*can't find*/
+    color: crimson;
+    /*can't find*/
 }
 
 .brand h1 span {
-    color: white; /*Julia and Gabby in header*/
+    color: white;
+    /*Julia and Gabby in header*/
 }
 
 
@@ -95,7 +129,8 @@ p {
 
 #header .header {
     min-height: 8vh;
-    background-color: rgba(91, 139, 188, 0.533); /*color of header rectangle*/
+    background-color: rgba(91, 139, 188, 0.533);
+    /*color of header rectangle*/
     transition: 0.3s ease background-color;
 }
 
@@ -112,7 +147,8 @@ p {
 #header .nav-list ul {
     list-style: none;
     position: absolute;
-    background-color: rgb(115, 149, 182); /*can't find*/
+    background-color: rgb(115, 149, 182);
+    /*can't find*/
     width: 100vw;
     height: 100vh;
     left: 100%;
@@ -160,7 +196,8 @@ p {
 }
 
 #header .nav-list ul li:hover a {
-    color: rgb(11, 2, 136); /*nav-bar hover over home, projects, contact*/
+    color: rgb(11, 2, 136);
+    /*nav-bar hover over home, projects, contact*/
 }
 
 #header .hamburger {
@@ -246,7 +283,8 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(87, 132, 179); /*background of home page*/
+    background-color: rgb(87, 132, 179);
+    /*background of home page*/
     opacity: 0.7;
     z-index: -1;
 }
@@ -287,7 +325,8 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: crimson; /*can't find*/
+    background-color: crimson;
+    /*can't find*/
     animation: text_reveal_box 1s ease;
     animation-delay: 0.5s;
 }
@@ -354,7 +393,8 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #8d267c 0%, #209b80 100%); /*can't find*/
+    background-image: linear-gradient(60deg, #8d267c 0%, #209b80 100%);
+    /*can't find*/
     opacity: 0.9;
     z-index: -1;
 }
@@ -385,7 +425,8 @@ p {
 
 #projects .projects {
     flex-direction: column;
-    max-width: 1200px;/*saw no change when I changed it*/
+    max-width: 1200px;
+    /*saw no change when I changed it*/
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -402,12 +443,20 @@ p {
     flex-direction: column;
 }
 
+#projects .all-projects2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #projects .project-about {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%; /*saw no change*/
+    width: 100%;
+    /*saw no change*/
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -418,7 +467,8 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 80%; /*saw no change*/
+    width: 80%;
+    /*saw no change*/
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -426,13 +476,15 @@ p {
 
 #projects .project-info {
     padding: 30px;
-    flex-basis: 100%; /*width of project boxes, was 60********************/
+    flex-basis: 100%;
+    /*width of project boxes, was 60********************/
     height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, rgba(229, 229, 229, 0.533) 0%, rgba(226, 226, 226, 0.533) 100%); /*gradient within project boxes, 
+    background-image: linear-gradient(60deg, rgba(229, 229, 229, 0.533) 0%, rgba(226, 226, 226, 0.533) 100%);
+    /*gradient within project boxes, 
     right is top right corner, left is bottom left corner
     I like this combo: (60deg, rgb(180, 205, 233) 0%, rgb(176, 204, 234) 100%) light blues*/
     color: rgb(78, 107, 151);
@@ -450,7 +502,8 @@ p {
     margin-top: 10px;
 }
 
-#projects .project-info h3 { /*main header*/
+#projects .project-info h3 {
+    /*main header*/
     font-size: 4rem;
     font-weight: 500;
     margin-left: 98px;
@@ -461,7 +514,8 @@ p {
 }
 
 #projects .project-img {
-    flex-basis: 100%; /*was 80***********/
+    flex-basis: 100%;
+    /*was 80***********/
     height: 300px;
     overflow: hidden;
     position: relative;
@@ -496,10 +550,10 @@ p {
 #about .about {
     flex-direction: column-reverse;
     text-align: center;
-    max-width: 500px;
+    max-width: 559px;
     margin: 0 auto;
     padding: 100px 20px;
-    margin-left: 250px;
+    margin-left: 140px;
 }
 
 #about .col-left {
@@ -550,6 +604,69 @@ p {
 
 
 /* End About Section */
+
+
+/* Start About2 Section */
+
+#about2 .aboutContainer2 {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 559px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    margin-right: 145px;
+    margin-top: -870px;
+}
+
+#about2 .col-left2 {
+    width: 250px;
+    height: 360px;
+    margin-left: 158px;
+}
+
+#about2 .col-right2 {
+    width: 100%;
+}
+
+#about2 .col-right2 h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+}
+
+#about2 .col-right2 p {
+    margin-bottom: 20px;
+    color: black;
+}
+
+#about2 .col-right2 .cta {
+    color: black;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+
+#about2 .col-left2 .about-img2 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 10px solid white;
+}
+
+#about2 .col-left2 .about-img2::after {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid crimson;
+    z-index: -1;
+}
+
+
+/* End About2 Section */
 
 
 /* contact Section */
@@ -720,7 +837,6 @@ p {
         margin: 2.5%;
     }
     /* End Services Section */
-
     /* Project */
     #projects .project-item {
         flex-direction: row;
@@ -741,8 +857,6 @@ p {
         height: 100%;
     }
     /* End Project */
-
-    
     /* About */
     /*
     #about .about {
@@ -791,8 +905,6 @@ p {
         z-index: -1;
     }*/
     /* End About */
-
-    
     /* contact  */
     #contact .contact {
         flex-direction: column;
