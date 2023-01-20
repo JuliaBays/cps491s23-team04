@@ -6,7 +6,7 @@ var io = require('socket.io')(http)
 // You should create a public directory in your project folder and
 // place all your static files there and the below app.use() will
 // serve all files and sub-directories contained within it.
-app.use('/static', express.static('public'));
+app.use('', express.static(__dirname));
 
 app.get('/', (request, response) => {
     console.log("Got an HTTP request")
