@@ -574,7 +574,7 @@ p {
 
 #about .col-right p {
     margin-bottom: 20px;
-    color: black;
+    color: rgb(3, 49, 117);/*smallest text*/
 }
 
 #about .col-right .cta {
@@ -598,7 +598,7 @@ p {
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid crimson;
+    border: 7px solid rgb(3, 49, 117);/*box around img*/
     z-index: -1;
 }
 
@@ -637,11 +637,11 @@ p {
 
 #about2 .col-right2 p {
     margin-bottom: 20px;
-    color: black;
+    color: rgb(3, 49, 117);/*smallest text, currently says tba*/
 }
 
 #about2 .col-right2 .cta {
-    color: black;
+    color: green;/*not sure*/
     margin-bottom: 50px;
     padding: 10px 20px;
     font-size: 2rem;
@@ -661,7 +661,7 @@ p {
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid crimson;
+    border: 7px solid rgb(3, 49, 117);/*box around img*/
     z-index: -1;
 }
 
