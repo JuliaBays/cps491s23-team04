@@ -574,7 +574,8 @@ p {
 
 #about .col-right p {
     margin-bottom: 20px;
-    color: rgb(3, 49, 117);/*smallest text*/
+    color: rgb(3, 49, 117);
+    /*smallest text*/
 }
 
 #about .col-right .cta {
@@ -598,7 +599,8 @@ p {
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid rgb(3, 49, 117);/*box around img*/
+    border: 7px solid rgb(3, 49, 117);
+    /*box around img*/
     z-index: -1;
 }
 
@@ -606,67 +608,70 @@ p {
 /* End About Section */
 
 
-/* Start About2 Section */
+/* Start About container2 Section */
 
-#about2 .aboutContainer2 {
+#about .aboutContainer2 {
     flex-direction: column-reverse;
     text-align: center;
     max-width: 559px;
     margin: 0 auto;
     padding: 100px 20px;
     margin-right: 145px;
-    margin-top: -870px;
+    margin-top: -717px;
 }
 
-#about2 .col-left2 {
+#about .col-left2 {
     width: 250px;
     height: 360px;
     margin-left: 158px;
 }
 
-#about2 .col-right2 {
+#about .col-right2 {
     width: 100%;
 }
 
-#about2 .col-right2 h2 {
+#about .col-right2 h2 {
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
     margin-bottom: 10px;
 }
 
-#about2 .col-right2 p {
+#about .col-right2 p {
     margin-bottom: 20px;
-    color: rgb(3, 49, 117);/*smallest text, currently says tba*/
+    color: rgb(3, 49, 117);
+    /*smallest text, currently says tba*/
 }
 
-#about2 .col-right2 .cta {
-    color: green;/*not sure*/
+#about .col-right2 .cta {
+    color: green;
+    /*not sure*/
     margin-bottom: 50px;
     padding: 10px 20px;
     font-size: 2rem;
 }
 
-#about2 .col-left2 .about-img2 {
+#about .col-left2 .about-img2 {
     height: 100%;
     width: 100%;
     position: relative;
     border: 10px solid white;
 }
 
-#about2 .col-left2 .about-img2::after {
+#about .col-left2 .about-img2::after {
     content: '';
     position: absolute;
     left: -33px;
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid rgb(3, 49, 117);/*box around img*/
+    border: 7px solid rgb(3, 49, 117);
+    /*box around img*/
     z-index: -1;
 }
 
 
-/* End About2 Section */
+/* End About container2 Section */
 
 
 /* contact Section */
