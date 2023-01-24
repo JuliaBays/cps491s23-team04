@@ -88,14 +88,6 @@ Sun Jan 22 / 11:00 - 11:45 / Gabe Hoban, Gabby, Julia
     - Gabe removed his card information from the support (owner) account
     - Dr. V will need to login as support, enter card info, turn on dynos
 
-### Personal Contributions
-- Julia
-    * team site
-- Gabby
-    * team site
-    * this readme
-
-
 
 # Sprint 2
 
