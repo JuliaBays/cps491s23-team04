@@ -88,6 +88,20 @@ Sun Jan 22 / 11:00 - 11:45 / Gabe Hoban, Gabby, Julia
     - Gabe removed his card information from the support (owner) account
     - Dr. V will need to login as support, enter card info, turn on dynos
 
+W Jan 25 / 11:00 - 11:20 / Gabby, Julia, Dr. Stiffler
+- check in meeting
+- consider switching to postgres because of data validation issues
+- start coming up with a list of last questions for Gabe
+- 
+
+W Jan 25 / 11:20 - 12:15 / Gabby, Julia
+- got SWJ to run locally on Gabby's laptop
+- looked through admin site capabilities
+    - we weren't sure why Dr. V doesn't just update/add member info this way, why through a spreadsheet upload?
+    - likely because *the edit button doesn't work* (at least not locally... so now makes sense why she doesn't go through the admin page)
+- site still not loading, cannot load any memebers, perform any searches, just shows loading
+- plan to look through the admin folder to identify what is used for the edit button and submit button, why it isn't working
+- determined 3 of Dr. V's main pressing issues are actually just due to typos/data validation issues (no one comes up when you search for 1895-1896, should be one person --> this is because the person is listed as 1894-1896 in the DB... so a typo?)
 
 # Sprint 2
 
