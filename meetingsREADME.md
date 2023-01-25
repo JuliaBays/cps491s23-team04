@@ -1,3 +1,7 @@
+# Checkin README
+
+## This README details our schedule, check-in dates, and meeting notes for each sprint
+
 # Team Meetings
 
 # Sprint 0/1
@@ -40,8 +44,10 @@ Sun Jan 22 / 11:00 - 11:45 / Gabe Hoban, Gabby, Julia
 - when logged in to heroku as support, can see the env variables within settings, kept there for security
 - how to run locally: 
     - cd into backend
+    - create .env file
+        - copy and paste the contents of the SECRETS/[dot]env file into the new .env file
     - npm run dev
-    - should be on local host 3000 or 4000?
+    - should be on local host 3000
     - once up, add /admin to the URL to get to admin page
 - for logging in to admin page:
     - must first add a UD email to MongoDB under Users collection (must be UD email, @udayton.edu)
@@ -88,12 +94,14 @@ Sun Jan 22 / 11:00 - 11:45 / Gabe Hoban, Gabby, Julia
     - Gabe removed his card information from the support (owner) account
     - Dr. V will need to login as support, enter card info, turn on dynos
 
-### Personal Contributions
-- Julia
-    * team site
-- Gabby
-    * team site
-    * this readme
+Mon Jan 23 / 11:10 - 11:50 / Gabby, Julia / Zoom
+
+- reviewed the checkin documents each of us made
+- taked about next issues to focus on
+    - Dr. V will be sending a spreadsheet soon
+    - Gabby still can't run locally from gcp cs
+    - getting familiar with the code still
+    - hopefully get to a few high priority tasks this sprint
 
 
 
@@ -112,14 +120,17 @@ Sun Jan 22 / 11:00 - 11:45 / Gabe Hoban, Gabby, Julia
 * W Mar 1
 * W Mar 8
 
+### Meeting Notes
+
 
 
 # Sprint 3
 
 ### Sprint Schedule
 1. Planning -- Sat Mar 25 - F Mar 31
-2. Development -- Sat Apr 1 - F Apr 14
-3. Clean-up -- Sat Apr 15 - Sun Apr 23
+2. Development -- Sat Apr 1 - F Apr 13
+* Easter Break -- R 6 - M Apr 10
+3. Clean-up -- Sun Apr 16 - Sun Apr 23
 4. Presentation -- M Apr 24
 5. Final Presentation -- M May 1
 
@@ -128,3 +139,6 @@ Sun Jan 22 / 11:00 - 11:45 / Gabe Hoban, Gabby, Julia
 * W Mar 29
 * W Apr 12
 * W Apr 19
+
+### Meeting Notes
+
