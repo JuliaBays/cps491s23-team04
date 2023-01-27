@@ -89,12 +89,14 @@ Sun Jan 22 / 11:00 - 11:45 / Gabe Hoban, Gabby, Julia
     - Dr. V will need to login as support, enter card info, turn on dynos
 
 W Jan 25 / 11:00 - 11:20 / Gabby, Julia, Dr. Stiffler
+
 - check in meeting
 - consider switching to postgres because of data validation issues
 - start coming up with a list of last questions for Gabe
 - 
 
 W Jan 25 / 11:20 - 12:15 / Gabby, Julia
+
 - got SWJ to run locally on Gabby's laptop
 - looked through admin site capabilities
     - we weren't sure why Dr. V doesn't just update/add member info this way, why through a spreadsheet upload?
@@ -102,6 +104,42 @@ W Jan 25 / 11:20 - 12:15 / Gabby, Julia
 - site still not loading, cannot load any memebers, perform any searches, just shows loading
 - plan to look through the admin folder to identify what is used for the edit button and submit button, why it isn't working
 - determined 3 of Dr. V's main pressing issues are actually just due to typos/data validation issues (no one comes up when you search for 1895-1896, should be one person --> this is because the person is listed as 1894-1896 in the DB... so a typo?)
+
+F Jan 27 / 11:10 - 12:15 / Gabby, Julia
+
+- errors on Heroku: SSL certificate / Domain
+- website worked on F Jan 13 when we first set it up with Dr. V, now doesn't load, we have not touched the code...
+    - hoping it is just the heroku error???
+    - when trying to load member list the inspect --> console gives these errors
+        - Access to XMLHttpRequest at 'https://swj1894.org/api/v1/person/list' from origin 'https://swj-capstone.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.   MembersList.html:1     
+        - GET https://swj1894.org/api/v1/person/list net::ERR_FAILED 200     DisplayMembers.js:736 
+    - think this is all because the URL is now ...herokuapp.com, the domain is supposed to be http://swj1894.org   
+- there are edit functions on the admin page but they don't work...
+    - could it just be that nothing is working/loading corerctly
+- ********************************everything just changed...*******************************************
+- *we were looking at https://swj-capstone.herokuapp.com/ ... was supopsed to be https://swj1894.org ... :|*
+- "open app" button on Heroku is not corrected to the correct URL
+- Important question: does the code push to the correct site?
+- *so... now everything works*
+- Dr. V should probably just make all changes through the admin page
+    - shouldn't be uploading full spreadsheets... just make the changes directly to the site
+        - unless she hates this idea maybe??
+    - already a way to export the data through multiple ways (excel, pdf, print, csv...)
+- possible that she would like the date ranges to work correctly, and that not all errors are really errors...
+    - The person that doesn't come up for the date range 1913-1914 is listed as active during the range 1912-1915
+        - so technically that person *was* active during the 1913-1914 range, so maybe the ranges are too specific?
+        - *ask Dr. V about this*
+- Already fixed one of the issues for Pearl, must have just been a typo, took 30 seconds to fix through updating the user on the admin page
+- Our current ideas
+    - maybe can quickly fix the majority of the main issues she listed (mostly just typos)
+        - typos, contributors page, bio/notes box are all of the high priority issues
+    - start on the notes/bio box in the admin page
+    - also maybe can ignore the DB change thoughts and move on to replacing the pop up windows with actual pages
+- Our current plan
+    - wait for Gabby to ask/tell Dr. Stiffler about all of this
+    - then go fix all the typos/contributors page
+    - how do we go about telling/asking Dr. V why she doesn't use the admin page/ is she committed to excel spreadsheets/wouldn't want to change
+        - maybe have to change the format of teh excel spreadsheet to get her to agree to update only through admin page
 
 # Sprint 2
 
