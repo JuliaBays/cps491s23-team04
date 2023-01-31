@@ -10,9 +10,9 @@
 
 ### Check-in Dates
 
-* W Jan 25
-* W Feb 1
-* W Feb 8
+* W Jan 25 
+* W Feb 1 
+* W Feb 8 
 
 ### Meeting Notes
 
@@ -93,7 +93,6 @@ W Jan 25 / 11:00 - 11:20 / Gabby, Julia, Dr. Stiffler
 - check in meeting
 - consider switching to postgres because of data validation issues
 - start coming up with a list of last questions for Gabe
-- 
 
 W Jan 25 / 11:20 - 12:15 / Gabby, Julia
 
@@ -117,9 +116,9 @@ F Jan 27 / 11:10 - 12:15 / Gabby, Julia
 - there are edit functions on the admin page but they don't work...
     - could it just be that nothing is working/loading corerctly
 - ********************************everything just changed...*******************************************
-- *we were looking at https://swj-capstone.herokuapp.com/ ... was supopsed to be https://swj1894.org ... :|*
+- *we were looking at https://swj-capstone.herokuapp.com/ ... supposed to be https://swj1894.org ... :|*
 - "open app" button on Heroku is not corrected to the correct URL
-- Important question: does the code push to the correct site?
+- *Important question: does the code push to the correct site?*
 - *so... now everything works*
 - Dr. V should probably just make all changes through the admin page
     - shouldn't be uploading full spreadsheets... just make the changes directly to the site
@@ -139,7 +138,32 @@ F Jan 27 / 11:10 - 12:15 / Gabby, Julia
     - wait for Gabby to ask/tell Dr. Stiffler about all of this
     - then go fix all the typos/contributors page
     - how do we go about telling/asking Dr. V why she doesn't use the admin page/ is she committed to excel spreadsheets/wouldn't want to change
-        - maybe have to change the format of teh excel spreadsheet to get her to agree to update only through admin page
+        - maybe have to change the format of the excel spreadsheet to get her to agree to update only through admin page
+            - Dr. Stiffler says to leave the database how it is, advise Dr. V to edit using admin page, look into sessions to stop using pop up windows for results
+            - recommends asking for one final spreadsheet and manually going through it to fix any errors in DB
+
+M Jan 30 / 11:10 - 11:50 / Gabby, Julia
+- Plan:
+    - get spreadsheet
+    - divide between the two of us and verify all of it/fix any errors in DB
+    - meet with Dr. V to tell her to use admin page -- do this week
+    - start on other stuff
+- After errors fixed:
+    - contributors page -- do this week
+    - bio box on admin but add to site
+    - prefixes (Mrs)
+    - notes for admin side only
+    - link people with changing last names
+    - sessions
+- Emailed Dr. V asking for latest spreadsheet and updating her
+- Meet Friday or early next week with Dr. V
+    - what does she need in order to feel comfortable only editing through the admin page
+        - change the way it exports?
+        - add more to the admin page table view and the export
+        - add data validation? on submit button after edit member
+    - date range issue
+    - next plans, bio box, notes on admin, link people, prefixes
+
 
 # Sprint 2
 
