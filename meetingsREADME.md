@@ -164,6 +164,30 @@ M Jan 30 / 11:10 - 11:50 / Gabby, Julia
     - date range issue
     - next plans, bio box, notes on admin, link people, prefixes
 
+W Feb 1 / 11:00 - 11:20 / Checkin 2 / Gabby, Julia, Dr. Stiffler
+
+- lots of talking about the spreadsheet and DB issues
+- overall plans going forward
+    - reorgannize latest spreadsheet into masterlist
+    - determine how much is changing per year / best way to organize all the data
+    - make a proposition for Dr. V
+    - after approval, divide and conquer to populate new DB
+- for meeting w/ Dr. V
+    - ask what she would need to be able to mostly just use admin page instead of DB
+    - show her the data we reorganized, how we think it would best be reorganized
+- long term goal
+    1. repopulate DB with new schema
+    2. add new functionality to admin page search/table view/export
+    3. show Dr. V that she can export, add/edit/delete members, then export again the new updated list
+    4. *get Dr. V everything she needs to feel comfortable using/relying on the website*
+- other...
+    - should test to see if build still works properly even with the domain issues
+
+W Feb 1 / 11:20 - 12:30 / excel / Gabby, Julia
+
+- creating masterlist from latest spreadsheet
+
+
 
 # Sprint 2
 
