@@ -186,8 +186,34 @@ W Feb 1 / 11:00 - 11:20 / Checkin 2 / Gabby, Julia, Dr. Stiffler
 W Feb 1 / 11:20 - 12:30 / excel / Gabby, Julia
 
 - creating masterlist from latest spreadsheet
+- highlighted possible issues/conflicting info for the first and last 200 rows
 
+F Feb 3 / 1:30 - 2:15 / Gabby, Julia, Dr. V
 
+- discussed inconsistencies in the speradsheet
+- got her thinking about how she would ideally like the member profiles to look/what information they should contain
+    - should have full name with title (by year but will only apply to a few known name changes), full addresses by year, DOB, DOD, proposer, pen name by year, leadership position by year
+    - all other info will eventually be held in the member profile
+- talked about general fixes for the inconsistencies, see email details below (M Feb 6)
+- we will send her our highlighted spreadsheet for her to look over again
+- she is willing to have the admin page be her sole resource to make changes to the data (no more uploading spreadsheets)
+    - we will first fix the DB errors, redesign its schema to add date ranges for several elements
+    - will eventually change the format of the admin table view to include all the info, or just make changes to the export methods so they output all data, not only what is displayed in the table
+- we will eventually add cookies/sessions so each member has a unique page (also will be needed for the citations feature)
+
+M Feb 6 / 11:10 - 11:45 / Gabby, Julia
+
+- cleaned up highlighted masterlist
+- sent email to Dr. V
+    - her response: 
+        - c/o means "in care of." (If you were having your mail delivered to my office, you would address the envelope: Gabby Snyder, c/o Dr. Vorachek, 269 Humanities, Dayton, OH 45469.) This is valuable information, so please have it show up on the website.
+        - For the estimated dates (where it says abt 1869), please keep that. This means that we don't have an exact date, but based on the person's age when she died, we know about when she was born (for example).
+        - For lines 146-151, don't correct that. The Adelphi was the name of the building at 5 Robert Street. The Eaton Terrace one should stay as is too.
+        - You would like member profiles to display only the surname, firstname, prefix/title, DOB, DOD, leadership position, address, neighborhood, city, post code, proposer (with date ranges where appropriate). PLEASE INCLUDE PEN NAME where applicable. And eventually, space for a biography.
+        - When in doubt, assume similar names are different people (Florence Abraham vs F. Abraham) CORRECT
+        - DOB, DOD, proposer, joined, shouldn't need date ranges  CORRECT
+        - Extra titles (L. L. A) should be omitted, they will be included in the biography eventually CORRECT
+    - she will work on the spreadsheet and send it back
 
 # Sprint 2
 
