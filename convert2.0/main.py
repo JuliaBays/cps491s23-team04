@@ -1,8 +1,12 @@
+# Created By: Julia Bays & Gabby Snyder
+# Link to how to use https://docs.google.com/document/d/e/2PACX-1vThpW312pwETdNj2Qyh33htV_B6OGaqlAsZ2RC7tbCoOLoMKEJ_3-7NC013Yaju4uhdX0xxcsbpKWuU/pub
+
 import csv
 from pymongo import MongoClient
 
-# goto secrets repo in SWJ to see password => then replace <password> with the secret password
-
+# goto secrets repo in SWJ to see password => then replace <password> with the secret password!!
+# DO NOT FORGET TO CHANGE BACK TO <password> AFTER USING PYTHON SCRIPT
+# Disclaimer, do not git commit/publish password to git repo
 connection_string = "mongodb+srv://swj1894:<password>@swj.wqoytpy.mongodb.net/SWJ?retryWrites=true&w=majority"
 
 client = MongoClient(connection_string)
