@@ -1,6 +1,8 @@
 import csv
 from pymongo import MongoClient
 
+# goto secrets repo in SWJ to see password => then replace <password> with the secret password
+
 connection_string = "mongodb+srv://swj1894:<password>@swj.wqoytpy.mongodb.net/SWJ?retryWrites=true&w=majority"
 
 client = MongoClient(connection_string)
