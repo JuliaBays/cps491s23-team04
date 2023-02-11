@@ -10,9 +10,9 @@
 
 ### Check-in Dates
 
-* W Jan 25
-* W Feb 1
-* W Feb 8
+* W Jan 25 
+* W Feb 1 
+* W Feb 8 
 
 ### Meeting Notes
 
@@ -93,7 +93,6 @@ W Jan 25 / 11:00 - 11:20 / Gabby, Julia, Dr. Stiffler
 - check in meeting
 - consider switching to postgres because of data validation issues
 - start coming up with a list of last questions for Gabe
-- 
 
 W Jan 25 / 11:20 - 12:15 / Gabby, Julia
 
@@ -117,9 +116,9 @@ F Jan 27 / 11:10 - 12:15 / Gabby, Julia
 - there are edit functions on the admin page but they don't work...
     - could it just be that nothing is working/loading corerctly
 - ********************************everything just changed...*******************************************
-- *we were looking at https://swj-capstone.herokuapp.com/ ... was supopsed to be https://swj1894.org ... :|*
+- *we were looking at https://swj-capstone.herokuapp.com/ ... supposed to be https://swj1894.org ... :|*
 - "open app" button on Heroku is not corrected to the correct URL
-- Important question: does the code push to the correct site?
+- *Important question: does the code push to the correct site?*
 - *so... now everything works*
 - Dr. V should probably just make all changes through the admin page
     - shouldn't be uploading full spreadsheets... just make the changes directly to the site
@@ -139,7 +138,82 @@ F Jan 27 / 11:10 - 12:15 / Gabby, Julia
     - wait for Gabby to ask/tell Dr. Stiffler about all of this
     - then go fix all the typos/contributors page
     - how do we go about telling/asking Dr. V why she doesn't use the admin page/ is she committed to excel spreadsheets/wouldn't want to change
-        - maybe have to change the format of teh excel spreadsheet to get her to agree to update only through admin page
+        - maybe have to change the format of the excel spreadsheet to get her to agree to update only through admin page
+            - Dr. Stiffler says to leave the database how it is, advise Dr. V to edit using admin page, look into sessions to stop using pop up windows for results
+            - recommends asking for one final spreadsheet and manually going through it to fix any errors in DB
+
+M Jan 30 / 11:10 - 11:50 / Gabby, Julia
+- Plan:
+    - get spreadsheet
+    - divide between the two of us and verify all of it/fix any errors in DB
+    - meet with Dr. V to tell her to use admin page -- do this week
+    - start on other stuff
+- After errors fixed:
+    - contributors page -- do this week
+    - bio box on admin but add to site
+    - prefixes (Mrs)
+    - notes for admin side only
+    - link people with changing last names
+    - sessions
+- Emailed Dr. V asking for latest spreadsheet and updating her
+- Meet Friday or early next week with Dr. V
+    - what does she need in order to feel comfortable only editing through the admin page
+        - change the way it exports?
+        - add more to the admin page table view and the export
+        - add data validation? on submit button after edit member
+    - date range issue
+    - next plans, bio box, notes on admin, link people, prefixes
+
+W Feb 1 / 11:00 - 11:20 / Checkin 2 / Gabby, Julia, Dr. Stiffler
+
+- lots of talking about the spreadsheet and DB issues
+- overall plans going forward
+    - reorgannize latest spreadsheet into masterlist
+    - determine how much is changing per year / best way to organize all the data
+    - make a proposition for Dr. V
+    - after approval, divide and conquer to populate new DB
+- for meeting w/ Dr. V
+    - ask what she would need to be able to mostly just use admin page instead of DB
+    - show her the data we reorganized, how we think it would best be reorganized
+- long term goal
+    1. repopulate DB with new schema
+    2. add new functionality to admin page search/table view/export
+    3. show Dr. V that she can export, add/edit/delete members, then export again the new updated list
+    4. *get Dr. V everything she needs to feel comfortable using/relying on the website*
+- other...
+    - should test to see if build still works properly even with the domain issues
+
+W Feb 1 / 11:20 - 12:30 / excel / Gabby, Julia
+
+- creating masterlist from latest spreadsheet
+- highlighted possible issues/conflicting info for the first and last 200 rows
+
+F Feb 3 / 1:30 - 2:15 / Gabby, Julia, Dr. V
+
+- discussed inconsistencies in the speradsheet
+- got her thinking about how she would ideally like the member profiles to look/what information they should contain
+    - should have full name with title (by year but will only apply to a few known name changes), full addresses by year, DOB, DOD, proposer, pen name by year, leadership position by year
+    - all other info will eventually be held in the member profile
+- talked about general fixes for the inconsistencies, see email details below (M Feb 6)
+- we will send her our highlighted spreadsheet for her to look over again
+- she is willing to have the admin page be her sole resource to make changes to the data (no more uploading spreadsheets)
+    - we will first fix the DB errors, redesign its schema to add date ranges for several elements
+    - will eventually change the format of the admin table view to include all the info, or just make changes to the export methods so they output all data, not only what is displayed in the table
+- we will eventually add cookies/sessions so each member has a unique page (also will be needed for the citations feature)
+
+M Feb 6 / 11:10 - 11:45 / Gabby, Julia
+
+- cleaned up highlighted masterlist
+- sent email to Dr. V
+    - her response: 
+        - c/o means "in care of." (If you were having your mail delivered to my office, you would address the envelope: Gabby Snyder, c/o Dr. Vorachek, 269 Humanities, Dayton, OH 45469.) This is valuable information, so please have it show up on the website.
+        - For the estimated dates (where it says abt 1869), please keep that. This means that we don't have an exact date, but based on the person's age when she died, we know about when she was born (for example).
+        - For lines 146-151, don't correct that. The Adelphi was the name of the building at 5 Robert Street. The Eaton Terrace one should stay as is too.
+        - You would like member profiles to display only the surname, firstname, prefix/title, DOB, DOD, leadership position, address, neighborhood, city, post code, proposer (with date ranges where appropriate). PLEASE INCLUDE PEN NAME where applicable. And eventually, space for a biography.
+        - When in doubt, assume similar names are different people (Florence Abraham vs F. Abraham) CORRECT
+        - DOB, DOD, proposer, joined, shouldn't need date ranges  CORRECT
+        - Extra titles (L. L. A) should be omitted, they will be included in the biography eventually CORRECT
+    - she will work on the spreadsheet and send it back
 
 # Sprint 2
 
