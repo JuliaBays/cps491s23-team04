@@ -42,7 +42,7 @@ col.update_one(filter_criteria, update_query)  # update the document matching th
 # this code allows to input all info
 ####################################
 
-
+'''
 db = client['SWJ']
 col = db['SWJ-People']
 
@@ -56,3 +56,4 @@ for each in reader:
         row[field] = each[field]
     print(row)
     col.insert_one(row)
+'''
