@@ -215,6 +215,35 @@ M Feb 6 / 11:10 - 11:45 / Gabby, Julia
         - Extra titles (L. L. A) should be omitted, they will be included in the biography eventually CORRECT
     - she will work on the spreadsheet and send it back
 
+W Feb 8 / 11:10 - 11:30 / Checkin 3 / Gabby, Julia, Dr. Stiffler
+
+- talked a lot more about the database and schema
+    - thinking of doing an array of arrays of objects: 
+        - position array
+            - array for each different position
+                - object for position
+                - object for year
+- discussed creating a python script to manage data entry into the database
+- talked about ideas for our presentation
+    - Who is our client
+    - What is our project
+    - What are the main goals
+    - overview slide of how everything works - languages, framework
+    - technical slide of our issues... 
+    - contributions - per person, two cols
+    - project plan/overview, sprint review and future plans
+    - recorded demo of what we are trying to fix going forward
+    - show bottom of spreadsheet - actually doomscroll from top to bottom of spreadsheet - this is problematic
+    - DB not working as well as we want
+    - 10 mins
+    - 8-12 slides
+    - no trello board
+
+W Feb 8 / 11:30 - 12:00 / Gabby, Julia
+
+- looked further into our database schema idea
+- looked into writing a python script
+
 # Sprint 2
 
 ### Sprint Schedule
