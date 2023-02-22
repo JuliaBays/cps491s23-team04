@@ -273,6 +273,23 @@ M Feb 20 / 11:15 - 11:45 / Gabby, Julia
     - Both make a mockup of DB schema
     - Both do checkin documents
 
+W Feb 22 / 11:15 - 12:15 / Gabby, Julia, Dr. Stiffler (just for length of checkin)
+
+- we figured out the CI/CD issue
+    - the new repo we created, cps491s23, does not have the variables set up in secrets
+    - need to go to repo - settings - secrets - add variables for Heroku API key and Heroku app name
+        - what do we do for shared support account on Heroku now that they require MFA??
+- going forward: 
+    - decide on DB schema
+        - look at search functionality
+    - set up staging
+- Stiffler advice: 
+    - write wrapper functions for searchSingleField, searchArray, ...
+    - stop overplanning and just try it
+    - will probably be repopulating database a million times to get it right
+
+
+
 # Sprint 3
 
 ### Sprint Schedule
