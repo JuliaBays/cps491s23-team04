@@ -3,13 +3,79 @@
 
 import csv
 from pymongo import MongoClient
+from bson.objectid import ObjectId
 
-# goto secrets repo in SWJ to see password => then replace <password> with the secret password!!
+# GOTO secrets repo in SWJ to see password => then replace <password> with the secret password!!
 # DO NOT FORGET TO CHANGE BACK TO <password> AFTER USING PYTHON SCRIPT
 # Disclaimer, do not git commit/publish password to git repo
-connection_string = "mongodb+srv://swj1894:<password>@swj.wqoytpy.mongodb.net/SWJ?retryWrites=true&w=majority"
+connection_string = "mongodb+srv://Julia:<password>@swj.wjvalxm.mongodb.net/test?retryWrites=true&w=majority"
 
 client = MongoClient(connection_string)
+
+db = client['test']
+col = db['test']
+
+# Set up CSV reader and header
+header = ['Surname', 'First Name', 'Prefix/Title', 'Date']
+csvFile = open('source.csv', 'r')
+reader = csv.DictReader(csvFile)
+
+# Iterate through each row in the CSV file and insert into MongoDB
+for each in reader:
+    
+    surName_array = []
+    firstName_array = []
+    
+    # Split the first name and surname fields by comma to separate out multiple names
+    names = each['First Name'].split(',')
+    names2 = each['Surname'].split(',')
+    
+    # Create a unique identifier for the MongoDB entry by concatenating the first name and surname
+    # This will group entries with the same first name and surname into the same MongoDB entry
+    unique_id = ''.join([name.strip() for name in names2]) + ''.join([name.strip() for name in names])
+
+    # Check if an entry with this unique identifier already exists in MongoDB
+    existing_entry = col.find_one({'_id': unique_id})
+    
+    # If an entry with this unique identifier already exists in MongoDB, update the existing entry
+    if existing_entry:
+        
+        # Add the date to the existing entry for each surname
+        for name2 in names2:
+            for obj in existing_entry['Surname']:
+                if obj['Surname'] == name2.strip():
+                    obj['dates'].append(each['Date'])
+                    break
+        
+        # Add the date to the existing entry for each first name
+        for name in names:
+            for obj in existing_entry['FirstNames']:
+                if obj['FirstName'] == name.strip():
+                    obj['dates'].append(each['Date'])
+                    break
+        
+        # Update the existing MongoDB entry with the new dates
+        col.update_one({'_id': unique_id}, {'$set': {'Surname': existing_entry['Surname'], 'FirstNames': existing_entry['FirstNames']}})
+    
+    # If an entry with this unique identifier does not already exist in MongoDB, create a new entry
+    else:
+        # Create a list of objects to hold arrays of first names and years
+        for name2 in names2:
+            name_obj2 = {'Surname': name2.strip(), 'dates': [each['Date']]}
+            surName_array.append(name_obj2)
+        
+        for name in names:
+            name_obj = {'FirstName': name.strip(), 'dates': [each['Date']]}
+            firstName_array.append(name_obj)
+        
+        # Create a new MongoDB entry with the surname and first name array fields and the unique identifier
+        row = {'_id': unique_id, 'Surname': surName_array, 'FirstNames': firstName_array}
+        col.insert_one(row)
+    
+# Close the CSV file
+csvFile.close()
+
+
 
 ############################################
 # this code deletes everyone in the database
@@ -43,8 +109,8 @@ col.update_one(filter_criteria, update_query)  # update the document matching th
 ####################################
 
 '''
-db = client['SWJ']
-col = db['SWJ-People']
+db = client['test']
+col = db['test']
 
 header = ['Surname', 'First Name', 'Prefix/Title']
 csvFile = open('source.csv', 'r')
