@@ -8,7 +8,7 @@ from bson.objectid import ObjectId
 # GOTO secrets repo in SWJ to see password => then replace <password> with the secret password!!
 # DO NOT FORGET TO CHANGE BACK TO <password> AFTER USING PYTHON SCRIPT
 # Disclaimer, do not git commit/publish password to git repo
-connection_string = "mongodb+srv://Julia:ETRxuB7v7UBYmNWi@swj.wjvalxm.mongodb.net/test?retryWrites=true&w=majority"
+connection_string = "mongodb+srv://Julia:<password>@swj.wjvalxm.mongodb.net/test?retryWrites=true&w=majority"
 
 client = MongoClient(connection_string)
 
