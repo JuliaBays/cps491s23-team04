@@ -288,7 +288,21 @@ W Feb 22 / 11:15 - 12:15 / Gabby, Julia, Dr. Stiffler (just for length of checki
     - stop overplanning and just try it
     - will probably be repopulating database a million times to get it right
 
+F Feb 24 / 11:00 - 11:45 / Gabby, Julia
 
+- Overall sprint goals: 
+    - database filled fully by end of next week, maybe the weekend
+    - functionality figured out before spring break
+        - Gabby can wrap up loose ends over spring break
+- still need to make notes/instructions for next years team making secrets (why our heroku build was broken)
+- Sprint 3 goals
+    - export function
+    - sessions and new pages for each member
+    - citations
+- By monday we should have: 
+    - picked a schema
+    - both tested/messed with python script in dummy DB
+    - looked over functionality
 
 # Sprint 3
 
