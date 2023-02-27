@@ -304,6 +304,16 @@ F Feb 24 / 11:00 - 11:45 / Gabby, Julia
     - both tested/messed with python script in dummy DB
     - looked over functionality
 
+M Feb 27 / 11:00 - 12:00 / Gabby, Julia
+
+- Looked at Julia's python, Gabby's mongoose trial
+- want to have two people fully in dummy DB by Wed
+- ask Dr. Stiffler about order of uploading all, breaking functionality
+    - staging? just run locally?
+- both keep working on python script, maybe look at mongoose
+- decided on schema :)
+- Friday update contributors page together
+
 # Sprint 3
 
 ### Sprint Schedule
