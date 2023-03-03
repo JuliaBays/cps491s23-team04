@@ -314,6 +314,24 @@ M Feb 27 / 11:00 - 12:00 / Gabby, Julia
 - decided on schema :)
 - Friday update contributors page together
 
+W Mar 1 / 11:00 - 12:00 / Gabby, Julia, Dr. Stiffler (for checkin)
+
+- goal: three full entries into db by next wednesday's checkin
+- talked about keeping Julia's fullname entry and uniqueid hash
+- will need to create staging environment
+    - will update completely in staging until end of semester
+    - can make the website our own in a way (rewrite some of the old code if we want)
+    - will also be connected to new db, not Gabe's
+- plan: keep looking into python and do contributor's list on Friday
+
+F Mar 3 / 11:15 - 12:30 / Gabby, Julia
+
+- updated contributors page!!!!! YAY!!!
+- still looking at python script
+- code that works on Julia's laptop does not work on Gabby's :)))))))
+    - no clue why... Gabby will figure it out *hopefully*
+- going forward: Gabby keep looking into python script, Gabby has Julia's latest version of convert.py
+
 # Sprint 3
 
 ### Sprint Schedule
