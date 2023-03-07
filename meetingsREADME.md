@@ -332,6 +332,22 @@ F Mar 3 / 11:15 - 12:30 / Gabby, Julia
     - no clue why... Gabby will figure it out *hopefully*
 - going forward: Gabby keep looking into python script, Gabby has Julia's latest version of convert.py
 
+M Mar 7 / 11:15 - 12:30 / Gabby, Julia
+
+- Gabby spent all weekend trying to get code to work on her laptop
+    - needed to add tls workarounds to this:
+        - client = MongoClient(connection_string, tls=True, tlsAllowInvalidCertificates=True)
+    - Gabby then spent this morning working on script
+- talked about/looked over Gabby's improvements
+    - still a lot to figure out...
+        - Julia has names working as well as the one-time string entries (DOB, DOD...)
+        - Gabby needs to figure out positions and addresses (arrays of objects) as well as the arrays (organizations, sources, maybe more?)
+- Going forward: 
+    - Gabby email Dr. V with update
+    - Gabby keep working on script
+        - need three full entries by wed
+    - Julia do checkin docs
+
 # Sprint 3
 
 ### Sprint Schedule
