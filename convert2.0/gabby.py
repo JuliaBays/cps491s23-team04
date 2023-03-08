@@ -11,16 +11,14 @@ from bson.objectid import ObjectId
 # Disclaimer, do not git commit/publish password to git repo
 connection_string = "mongodb+srv://snyderg3:<password>@cluster0.as96288.mongodb.net/test"
 
-#connection_string = "mongodb+srv://gabby:eTWFWagCifM8eVgA@cluster0.dgqj828.mongodb.net/test"
-
 client = MongoClient(connection_string, tls=True, tlsAllowInvalidCertificates=True)
 
 db = client["testpeople"]
 col = db["people"]
 
 # Set up CSV reader and header
-header = ["surname", "first", "title", "fullname", "pen", "dob", "dod", "position", "street", "neighborhood", "city", "post", "proposer", "org1", "org2", "org3", "org4", "org5", "periodicals", "source", "other", "joined", "bio", "year"]
-csvFile = open("sourceJulia.csv", "r")
+header = ['surname', 'first', 'title', 'fullname', 'pen', 'dob', 'dod', 'position', 'street', 'neighborhood', 'city', 'post', 'proposer', 'org1', 'org2', 'org3', 'org4', 'org5', 'periodicals', 'source', 'other', 'joined', 'bio', 'year']
+csvFile = open('sourceJulia.csv', 'r')
 reader = csv.DictReader(csvFile)
 
 for row in reader:
@@ -30,8 +28,13 @@ for row in reader:
     add_obj = {"street": row["street"], "neighborhood": row["neighborhood"], "city": row["city"], "post": row["post"], "years": [row["year"]]}
     
     #booleans for checking if empty
-    pos_none = False if row["position"] == "" else True
-    add_none = False if row["address"] == "" else True
+    pos_none = False
+    add_none = False
+    if row["position"] == "":
+        pos_none = True
+    if row["street"] == "" and row["neighborhood"] == "" and row["city"] == "" and row["post"] == "":
+        add_none = True
+    
     pen_none = False if row["pen"] == "" else True
     dob_none = False if row["dob"] == "" else True
     dod_none = False if row["dod"] == "" else True
