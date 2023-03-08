@@ -21,25 +21,18 @@ col = db['people']
 # Set up CSV reader and header
 header = ['surname', 'first', 'title', 'fullname', 'pen', 'dob', 'dod', 'position', 'street', 'neighborhood', 'city', 'post', 'proposer', 'org1', 'org2', 'org3', 'org4', 'org5', 'periodicals', 'source', 'other', 'joined', 'bio', 'year']
 csvFile = open('sourceJulia.csv', 'r')
-#reader = csv.DictReader(csvFile)
 reader = csv.DictReader(csvFile)
-
-#next(reader)
 
 for row in reader:
 
     # Create an object to hold the name information
     name_obj = {"fullname": row["fullname"], "surname": row["surname"], "first": row["first"], "title": row["title"], "years": [row["year"]]}
-    pos_obj = {"position": row["position"], "years": [row["year"]]}
-    add_obj = {"street": row["street"], "neighborhood": row["neighborhood"], "city": row["city"], "post": row["post"], "years": [row["year"]]}
+    pos_obj = {"position": row["position"], "years": [row["year"]]} #should only be used if new position
     
     #booleans for checking if empty
     pos_none = False
-    add_none = False
     if row["position"] == "":
         pos_none = True
-    if row["street"] == "" and row["neighborhood"] == "" and row["city"] == "" and row["post"] == "":
-        add_none = True
     print("pos_none: ", pos_none)
 
     # Create a unique identifier for the MongoDB entry by hashing the full name
@@ -52,8 +45,8 @@ for row in reader:
     if existing:
         nameFound = False
         posFound = False
-        addFound = False
         # Add the date to the existing entry for objects with dates
+        #NAMES
         for name in existing["names"]:
             if name["fullname"] == name_obj["fullname"] and name["surname"] == name_obj["surname"] and name["first"] == name_obj["first"] and name["title"] == name_obj["title"]:
                 name["years"].append(row["year"])
@@ -61,54 +54,33 @@ for row in reader:
                 break
         if not nameFound: #shouldn't need this
             existing["names"].append({"fullname": row["fullname"], "surname": row["surname"], "first": row["first"], "title": row["title"], "years": [row["year"]]})
-        
-        try:
-            # Some Code
-            for position in existing["positions"]:
-                if position["position"] == pos_obj["position"] and not pos_none:
-                    position["years"].append(row["year"])
-                    posFound = True
-                    break
-            if not posFound and not pos_none: 
-                pos = [pos_obj]
-                print("positions before: ", existing["positions"])
-                existing["positions"].append(pos)
-                print("positions after: ", existing["positions"])
-            print("finished try pos")
-        except:
-            print("in except pos")
-            #positions not created yet
-            existing["positions"] = [pos_obj]
+        col.update_one({"_id": unique_id}, {"$set": {"names": existing["names"]}})
 
-        try:
-            for address in existing["addresses"]:
-                if address["street"] == add_obj["street"] and address["neighborhood"] == add_obj["neighborhood"] and address["city"] == add_obj["city"] and address["post"] == add_obj["post"] and not add_none:
-                    address["years"].append(row["year"])
-                    addFound = True
-                    break
-            if not addFound and not add_none: 
-                add = [add_obj]
-                existing["addresses"].append(add)
-            print("finished try add")
-        except: 
-            print("in except add")
-            #positions not created yet
-            existing["addresses"] = [add_obj]
+        #POSITIONS
+        if not pos_none:
+            try:
+                # Some Code
+                for position in existing["positions"]:
+                    if position["position"] == pos_obj["position"]:
+                        position["years"].append(row["year"])
+                        #remove current positions and add the new edited version
+                        col.update_one({"_id": unique_id}, {"$set": {"positions": existing["positions"]}})
+                        posFound = True
+                        break
+                if not posFound: #no existing position matches this position, add new object to positions array
+                    #print("positions before: ", existing["positions"])
+                    #existing["positions"].append(pos)
+                    print(col.find_one({"_id": unique_id}))
+                    col.update_one({"_id": unique_id}, { '$push': {"positions": pos_obj}})
+                    print(col.find_one({"_id": unique_id}))
+                    #print("positions after: ", existing["positions"])
+                print("finished try pos")
+            except: #existing["positions"] does not exist yet and there is a position to add
+                print("in except pos")
+                #positions not created yet
+                #existing["positions"] = [pos_obj]
+                col.update_one({"_id": unique_id}, {"$set": {"positions": [pos_obj]}})
 
-        if pos_none or add_none:
-            if pos_none and add_none:
-                col.update_one({"_id": unique_id}, {"$set": {"names": existing["names"]}})
-            elif pos_none:
-                col.update_one({"_id": unique_id}, {"$set": {"names": existing["names"], 
-                                                     "addresses": existing["addresses"]}})
-            else: #add_none
-                col.update_one({"_id": unique_id}, {"$set": {"names": existing["names"], 
-                                                     "positions": existing["positions"]}})
-        else:
-            col.update_one({"_id": unique_id}, {"$set": {"names": existing["names"], 
-                                                     "positions": existing["positions"], 
-                                                     "addresses": existing["addresses"]}})
-    
     # If an entry with this unique identifier does not already exist in MongoDB, create a new entry
     else:
         #only add if there for arrays of obj that carry years
@@ -116,20 +88,12 @@ for row in reader:
         # Create a names array field with the name object
         names = [name_obj]
         pos = [pos_obj]
-        add = [add_obj]
 
         # Create a new MongoDB entry with the names array field and the unique identifier
-        if pos_none or add_none:
-            if pos_none and add_none:
-                row = {"_id": unique_id, "names": names}
-            elif pos_none:
-                row = {"_id": unique_id, "names": names, "addresses": add}
-            else: #add_none
-                row = {"_id": unique_id, "names": names, "positions": pos}
+        if pos_none:
+            row = {"_id": unique_id, "names": names}
         else:
-            row = {"_id": unique_id, "names": names, 
-                "positions": pos, 
-                "addresses": add}
+            row = {"_id": unique_id, "names": names, "positions": pos}
         col.insert_one(row)
     
 
