@@ -348,6 +348,22 @@ M Mar 7 / 11:15 - 12:30 / Gabby, Julia
         - need three full entries by wed
     - Julia do checkin docs
 
+W Mar 8 / 11:00 - 12:00 / Gabby, Julia, Dr. Stiffler (for checkin)
+
+- presentation idea from Stiffler: 
+    - in one or two slides
+    - shit on them slide
+    1. what works
+    2. what doesnt work
+    3. what our redesign will be now that we have repopulated the DB
+    - talk about how we need new staging to develop in parallel
+    - can't bring down old website, need to update in parallel
+- Going forward: 
+    - Gabby finish python script
+    - Gabby set up staging
+    - Julia go to Italy
+- added Gabby's current python file to github and the delete.py file
+
 # Sprint 3
 
 ### Sprint Schedule
