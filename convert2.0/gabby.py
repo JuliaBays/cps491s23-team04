@@ -17,8 +17,8 @@ db = client["testpeople"]
 col = db["people"]
 
 # Set up CSV reader and header
-header = ['surname', 'first', 'title', 'fullname', 'pen', 'dob', 'dod', 'position', 'street', 'neighborhood', 'city', 'post', 'proposer', 'org1', 'org2', 'org3', 'org4', 'org5', 'periodicals', 'source', 'other', 'joined', 'bio', 'year']
-csvFile = open('sourceJulia.csv', 'r')
+header = ["surname", "first", "title", "fullname", "pen", "dob", "dod", "position", "street", "neighborhood", "city", "post", "proposer", "org1", "org2", "org3", "org4", "org5", "periodicals", "source", "other", "joined", "bio", "year"]
+csvFile = open("sourceJulia.csv", "r")
 reader = csv.DictReader(csvFile)
 
 for row in reader:
