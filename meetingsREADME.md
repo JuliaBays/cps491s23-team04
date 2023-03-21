@@ -375,7 +375,7 @@ M Mar 20 / Gabby and Dr. Stiffler / Staging help
 - got docker image to build locally, but still not working with staging
 - Gabby got the website css / html to show on staging but no functionality works
 - Heroku shows builds failing but deploys are "successful"
-- Will be ok without staging for minimum viable product
+- Will be ok without staging for sprint presentations
 
 
 # Sprint 3
