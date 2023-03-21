@@ -364,6 +364,20 @@ W Mar 8 / 11:00 - 12:00 / Gabby, Julia, Dr. Stiffler (for checkin)
     - Julia go to Italy
 - added Gabby's current python file to github and the delete.py file
 
+F Mar 10 / no meeting
+
+M Mar 20 / no meeting
+
+- Gabby working on staging
+
+M Mar 20 / Gabby and Dr. Stiffler / Staging help
+
+- got docker image to build locally, but still not working with staging
+- Gabby got the website css / html to show on staging but no functionality works
+- Heroku shows builds failing but deploys are "successful"
+- Will be ok without staging for minimum viable product
+
+
 # Sprint 3
 
 ### Sprint Schedule
