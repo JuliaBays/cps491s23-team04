@@ -370,12 +370,49 @@ M Mar 20 / no meeting
 
 - Gabby working on staging
 
-M Mar 20 / Gabby and Dr. Stiffler / Staging help
+M Mar 20 / Gabby and Dr. Stiffler / Staging help / 9:45 - 11:15
 
 - got docker image to build locally, but still not working with staging
 - Gabby got the website css / html to show on staging but no functionality works
 - Heroku shows builds failing but deploys are "successful"
 - Will be ok without staging for sprint presentations
+
+T Mar 21 / Gabby and Dr. Stiffler / Staging / 3:15 - 6:00
+
+- more breaking stuff
+
+R Mar 23 / Gabby and Stiffler / Staging / 3:15 - 5:15
+
+- more breaking stuff
+
+F Mar 24 / Gabby, Julia, Dr. Stiffler / staging / 12:15 - 1:30
+
+- more breaking stuff
+
+M Mar 27 / Gabby and Dr. Stiffler / staging / 8:15 - 10:00
+
+- hard coded one variable for the url
+- staging is working for the full members list, but not the search on the main page
+    - I (Gabby) realized this after the fact, *might* be able to fix it myself
+- Stiffler thinks we should: 
+    - explain to Dr. V that the old website is kind of a mess / the code base is overly complicated and hard to work
+        - explain it took Dr. Stiffler almost 10 hours with us to get only one piece up and running
+    - start to rebuild the website from scratch
+        - won't get to admin
+        - might work a little over the summer
+        - might become a fall project for someone / capston 491 in fall
+
+M Mar 27 / Gabby, Julia / checkin / 11:15 - 11:45
+
+- Gabby explained the above to Julia
+- Going forward: 
+    - Julia overview for checkin wednesday
+    - both look for good bootstrap
+    - Gabby make a new Heroku and lets use BitBucket again (hopefully thats fine??)
+        - think docker / pipelines / CI/CD will be easier on bitbucket
+    - Gabby looking into fixing the staging
+    
+
 
 
 # Sprint 3
