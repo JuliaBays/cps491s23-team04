@@ -381,6 +381,25 @@ T Mar 21 / Gabby and Dr. Stiffler / Staging / 3:15 - 6:00
 
 - more breaking stuff
 
+
+
+# Sprint 3
+
+### Sprint Schedule
+1. Planning -- Sat Mar 25 - F Mar 31
+2. Development -- Sat Apr 1 - F Apr 14
+3. Clean-up -- Sat Apr 15 - Sun Apr 23
+4. Presentation -- M Apr 24
+5. Final Presentation -- M May 1
+
+### Check-in Dates
+
+* W Mar 29
+* W Apr 12
+* W Apr 19
+
+# Team Meetings
+
 R Mar 23 / Gabby and Stiffler / Staging / 3:15 - 5:15
 
 - more breaking stuff
@@ -414,18 +433,3 @@ M Mar 27 / Gabby, Julia / checkin / 11:15 - 11:45
     
 
 
-
-# Sprint 3
-
-### Sprint Schedule
-1. Planning -- Sat Mar 25 - F Mar 31
-2. Development -- Sat Apr 1 - F Apr 14
-3. Clean-up -- Sat Apr 15 - Sun Apr 23
-4. Presentation -- M Apr 24
-5. Final Presentation -- M May 1
-
-### Check-in Dates
-
-* W Mar 29
-* W Apr 12
-* W Apr 19
