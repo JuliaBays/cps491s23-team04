@@ -431,5 +431,13 @@ M Mar 27 / Gabby, Julia / checkin / 11:15 - 11:45
         - think docker / pipelines / CI/CD will be easier on bitbucket
     - Gabby looking into fixing the staging
     
+W Mar 27 / Gabby, Julia, Dr. Stiffler / checkin / 11:15 - 11:45
 
-
+- try for meeting tomorrow with all of us and Dr. V tomorrow (R) 3:30 or later
+- look into Django since it is a multipage site
+- use a web framework (Django)
+    - write the models
+    - built in admin
+    - switch to postgres
+- for next week: 
+    - each of us do chapter 1-3 of Django 4 textbook (blog site) by next wednesday
