@@ -395,6 +395,7 @@ T Mar 21 / Gabby and Dr. Stiffler / Staging / 3:15 - 6:00
 ### Check-in Dates
 
 * W Mar 29
+* W Apr 5
 * W Apr 12
 * W Apr 19
 
@@ -441,3 +442,19 @@ W Mar 27 / Gabby, Julia, Dr. Stiffler / checkin / 11:15 - 11:45
     - switch to postgres
 - for next week: 
     - each of us do chapter 1-3 of Django 4 textbook (blog site) by next wednesday
+
+R Mar 28 / Gabby, Julia, Dr. Stiffler, Dr. Vorachek
+
+- zoom meeting while Dr. V in NYC 
+- Dr. Stiffler talked her through our plans
+    - she fully approves
+- at some point ned to talk to her again about all of her hopes/needs for the site
+
+
+Sun Apr 2 / Gabby, Julia / 1:15 - 3:45
+
+- Django Ch 1
+
+M Apr 3 / Gabby, Julia / 11:15 - 12:15
+
+- Django Ch 2
