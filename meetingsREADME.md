@@ -458,3 +458,14 @@ Sun Apr 2 / Gabby, Julia / 1:15 - 3:45
 M Apr 3 / Gabby, Julia / 11:15 - 12:15
 
 - Django Ch 2
+
+W Apr 5 / Gabby, Julia, Dr. Stiffler / 11:00 - 12:45
+
+- working through postgres w/ Julia
+- Gabby catching up
+- Future plans: 
+    - email Dr. V and ask for her to meet us in capstone or robotics lab on Tuesday after 3:15 ish
+        - need a new, updated list of all of her wants/needs for the site
+    - finish through Ch 6 of notes and textbook by then
+    - meet Wednesday to plan the site
+- final presentation will likely be an overview of all the issues we've had and justification/reasoning for why we have chosen to redo the site with Django, talk about the future of the project w/ Julia and the next team
