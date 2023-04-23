@@ -499,14 +499,16 @@ W Apr 19 / Gabby, Julia, Dr. Stiffler / 10:00 - 12:00
 - Finished blog application
 - Continue working on bookmarks application
 - Capstone: 
-1. presentation
+1. presentation powerpoint
 2. README
 3. write up
 4. team write ups (google forms)
+5. Team website updating
 
 R Apr 21 / Gabby, Julia / plan for weekend
 - Continue working on bookmarks application
 - Work on capstone project presentation and other materials
+- Work on team website on our updates
 
 W Apr 26 / Gabby, Julia, Dr. Stiffler / 11:00 - 12:00
 - Dry run through our presentation with Dr. Stiffler
