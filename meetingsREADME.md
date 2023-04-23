@@ -469,3 +469,49 @@ W Apr 5 / Gabby, Julia, Dr. Stiffler / 11:00 - 12:45
     - finish through Ch 6 of notes and textbook by then
     - meet Wednesday to plan the site
 - final presentation will likely be an overview of all the issues we've had and justification/reasoning for why we have chosen to redo the site with Django, talk about the future of the project w/ Julia and the next team
+
+F Apr 7 / Gabby, Julia/ plan for weekend
+- Django lets learn it in less than 2 weeks 
+- work through blog application (1-3
+- have ideas for models.py
+- if finished with blog application work through bookmarks (4-6) project
+
+T Apr 11 / Gabby, Julia, Dr. Stiffler, Dr. Vorachek / 3:30 - 5:00
+- Discussed our redesign with Dr. Vorachek
+- Dr. Vorachek agreeded to the much needed redesign and wants an overall sustainable website
+- Talked about the hopes/needs/wants for the website
+- Told Dr. Vorachek our upcoming plan for the website and how we will be using Django which will be easier and better to use due to middleware experience
+- Gabby and Julia keep working on Blog and Bookmarks Application
+
+W Apr 12 / Gabby, Julia, Dr. Stiffler / 11:00 - 12:30
+- Further discuss plan for future website
+- Created a layout of what to do
+- Gained more information on how to use Django 
+- Fixed bugs with our blog application
+
+R Apr 13 / Gabby, Julia / plan for weekend
+- Work on blog application
+- Start on bookmarks application
+- Get familar with Django
+
+W Apr 19 / Gabby, Julia, Dr. Stiffler / 10:00 - 12:00
+- Get plan for capstone presentation
+- Finished blog application
+- Continue working on bookmarks application
+- Capstone: 
+1. presentation
+2. README
+3. write up
+4. team write ups (google forms)
+
+R Apr 21 / Gabby, Julia / plan for weekend
+- Continue working on bookmarks application
+- Work on capstone project presentation and other materials
+
+W Apr 26 / Gabby, Julia, Dr. Stiffler / 11:00 - 12:00
+- Dry run through our presentation with Dr. Stiffler
+- Share our presentation with Dr. Vorachek to get her insight and approval of project
+- Finish bookmarks application
+
+F Apr 28 / Gabby, Julia, Dr. Stiffler, Dr. Vorachek / 3:30 - 6:00
+- FINAL CAPSTONE PRESNTATION!! 
