@@ -608,11 +608,12 @@ p {
 }
 
 #about .col-right h2 {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
     margin-bottom: 10px;
     text-align: center;
+    color: rgb(3, 49, 117);  
 }
 
 #about .col-right p {
@@ -668,17 +669,23 @@ p {
 
     display: flex;
     width: 50%;
+    /*justify-content: flex-end;
+    align-items: flex-end;*/
 }
 
 #sponsors .sponsors-person {
     flex: 1;
     /*border: 2px solid blueviolet;*/
     margin: 10px;
-    max-width: 559px;    
+    max-width: 559px; 
+    justify-content: flex-start;
+    align-items: flex-start;   
   }
   
 #sponsors .sponsors-person:first-child {
     margin-right: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
 #sponsors .col-left {
@@ -693,11 +700,12 @@ p {
 }
 
 #sponsors .col-right h2 {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
     margin-bottom: 10px;
     text-align: center;
+    color: rgb(3, 49, 117);    
 }
 
 #sponsors .col-right p {
