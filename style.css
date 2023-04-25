@@ -580,16 +580,20 @@ p {
     margin: 0 auto;
     padding: 100px 20px;
     margin-left: 140px;*/
-
     display: flex;
     width: 50%;
 }
-
+#about .about-header h1 {
+    margin-bottom: 50px;
+    color: rgb(3, 49, 117);
+    text-align: center;
+    align-items: end;
+}
 #about .about-person {
     flex: 1;
     /*border: 2px solid blueviolet;*/
     margin: 10px;
-    max-width: 559px;    
+    max-width: 559px;   
   }
   
 #about .about-person:first-child {
@@ -672,7 +676,12 @@ p {
     /*justify-content: flex-end;
     align-items: flex-end;*/
 }
-
+#sponsors .sponsors-header h1 {
+    margin-bottom: 50px;
+    color: rgb(3, 49, 117);
+    text-align: center;
+    align-items: end;
+}
 #sponsors .sponsors-person {
     flex: 1;
     /*border: 2px solid blueviolet;*/
