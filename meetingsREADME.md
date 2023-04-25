@@ -448,8 +448,7 @@ R Mar 28 / Gabby, Julia, Dr. Stiffler, Dr. Vorachek
 - zoom meeting while Dr. V in NYC 
 - Dr. Stiffler talked her through our plans
     - she fully approves
-- at some point ned to talk to her again about all of her hopes/needs for the site
-
+- at some point need to talk to her again about all of her hopes/needs for the site
 
 Sun Apr 2 / Gabby, Julia / 1:15 - 3:45
 
@@ -470,50 +469,95 @@ W Apr 5 / Gabby, Julia, Dr. Stiffler / 11:00 - 12:45
     - meet Wednesday to plan the site
 - final presentation will likely be an overview of all the issues we've had and justification/reasoning for why we have chosen to redo the site with Django, talk about the future of the project w/ Julia and the next team
 
-F Apr 7 / Gabby, Julia/ plan for weekend
-- Django lets learn it in less than 2 weeks 
-- work through blog application (1-3
-- have ideas for models.py
+F Apr 7 / Gabby, Julia 
+
+- going to try to learn Django in 2 weeks
+- work through blog application (Ch 1-3)
+- get ideas for models.py
 - if finished with blog application work through bookmarks (4-6) project
 
 T Apr 11 / Gabby, Julia, Dr. Stiffler, Dr. Vorachek / 3:30 - 5:00
-- Discussed our redesign with Dr. Vorachek
+
+- discussed our redesign with Dr. Vorachek
 - Dr. Vorachek agreeded to the much needed redesign and wants an overall sustainable website
-- Talked about the hopes/needs/wants for the website
-- Told Dr. Vorachek our upcoming plan for the website and how we will be using Django which will be easier and better to use due to middleware experience
-- Gabby and Julia keep working on Blog and Bookmarks Application
+- talked about the hopes/needs/wants for the website
+- told Dr. Vorachek our upcoming plan for the website and why we will use Django
+- going forward: 
+    - keep working on Blog and Bookmarks Application
 
 W Apr 12 / Gabby, Julia, Dr. Stiffler / 11:00 - 12:30
-- Further discuss plan for future website
-- Created a layout of what to do
-- Gained more information on how to use Django 
-- Fixed bugs with our blog application
 
-R Apr 13 / Gabby, Julia / plan for weekend
-- Work on blog application
-- Start on bookmarks application
-- Get familar with Django
+- further discussed plan for future website
+- created a layout of what to do
+- gained more information on how to use Django 
+- fixed bugs with our blog application
 
 W Apr 19 / Gabby, Julia, Dr. Stiffler / 10:00 - 12:00
-- Get plan for capstone presentation
-- Finished blog application
-- Continue working on bookmarks application
-- Capstone: 
-1. presentation powerpoint
-2. README
-3. write up
-4. team write ups (google forms)
-5. Team website updating
 
-R Apr 21 / Gabby, Julia / plan for weekend
-- Continue working on bookmarks application
-- Work on capstone project presentation and other materials
-- Work on team website on our updates
+- talked about a bunch of stuff...
+- this is what Stiffler does in 242
+- explain why this is suitable for swj
+- show blog app and say it is an example of a Django app
+- show how this could be recreated well/similarly for SWJ
+    - what would be the same what would be different
+- pres idea
+    - show admin page
+    - show unique urls
+    - show search functionality
+    - show pagination
+- next semester
+    - admin page should not be reachable to the public (by adding /admin)
+	    - should limit it (through settings.py: allowed hosts, web address only reachable from certain IP range)
+- Presentation
+    - SWJ is a read-only website
+    - 50/50 on old vs new plans
+    - slide with sad face emoji (<-- google that)
+        - don't talk badly about any specific team
+        - say each team has taken time out of sprints struggling with working on old code
+        - this will be easier to maintain
+    - transition to slides of the four files (views, forms, models, urls, (admin?)) explaining what they are on a lower level
+    - then a slide for our vision for each of those files
+        - start with models
+        - then views (logic that will use the models)
+        - then urls (all of that^ can be mapped with this)
+        - then an added layer are the forms that can be used by the views
+    - we proposed a complete overhaul of this project with sustainability in mind
+        - why we pitched the redesign 
+            - not only was this difficult to work with, hard to modify, sent 7 hrs with stiffler trying to edit things that were hard coded
+            - **static code was hardcoded - talk about how we couldn't even set up staging
+            - trying to do anything further (get the functionality Dr. V wants to actually work) was an unkknown... not sure how bad that could have been
+    - we dont need a video
+        - instead do a bunch of slides with two pictures - (how search looks/works after being worked on for 3 years -- how it looks after 4 days with Django)
+- README
+    - mostly future plans
+    - our understanding
+    - an outline of the project
+        - what are the important files in Django?  --> make a subsection for each
+            - views: 
+                - home page
+                - listing members
+                - displaying a specific member
+            - forms: 
+                - search form: date ranges, ...
+            - models: 
+                - database tables and entries
+                - question: what database? postgres - explain why - because powerful for text lookup, can use data validation
+                - q: what kind of data are we storing? a member - longer answer - date ranges, ...
+            - urls: 
+                - regular expressions
+                - swj1894/members - list of all members possibly
+                - swj1894/members/<reg expression for the user's full name>
+            - admin (low priority)
+            - search engine optimization (SEO):
+                - just one line in README, say we promise to do something for this - can be found in textbook here___
+    - three backticks to add a code snippet in markdown (```)
+- make models a folder
+    - inside have members.py
+- succinct notes on old project
+- end with "end of life: 2023"
+- then "coming soon: SWJ 2.0 using Django framework"
 
 W Apr 26 / Gabby, Julia, Dr. Stiffler / 11:00 - 12:00
-- Dry run through our presentation with Dr. Stiffler
-- Share our presentation with Dr. Vorachek to get her insight and approval of project
-- Finish bookmarks application
 
-F Apr 28 / Gabby, Julia, Dr. Stiffler, Dr. Vorachek / 3:30 - 6:00
-- FINAL CAPSTONE PRESNTATION!! 
+- dry run through our presentation with Dr. Stiffler
+- possibly share our presentation with Dr. Vorachek to get her insight and approval of project
